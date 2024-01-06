@@ -1,6 +1,125 @@
-<h1>Ken's Website</h1>
-<h2>About me!</h2>
-<p>I am currently a softmore attending the university of pittsburgh. I am
-currently majoring in computer science and planning to earn a minor in mathematics.
-My hobbies include playing guitar, hockey, soccer and cooking. My favorite color is 
-teal and a fun fact about me is that I can speak Japanese fluently. </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ken Website</title>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" href="kenweb.css">
+    <script>
+        function openTab(evt, tabName) {
+            var tabcontent = document.getElementsByClassName("tabcontent");
+          for (var i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].classList.remove("active");
+          }
+        
+          var tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+          }
+        
+          evt.currentTarget.classList.add("active");
+          document.getElementById(tabName).classList.add("active");
+        }
+    </script>  
+</head>
+<body>
+</body>       
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+    <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+    <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+    <button class="tablinks" onclick="openTab(event, 'Contact Me')">Contact Me</button>
+</div>
+  
+  <div id="About" class="tabcontent active">
+    <div class = "container">
+        <div class="image">
+            <img src = "kenpic.jpg">
+        </div>
+        <div class="text">
+            <h2>About me!</h2>
+            <p>I am currently a softmore attending the university of pittsburgh. I am
+            currently majoring in computer science and planning to earn a minor in mathematics.
+            My hobbies include playing guitar, hockey, soccer and cooking. My favorite color is 
+            teal and a fun fact about me is that I can speak Japanese fluently. </p>
+        </div>
+    </div>
+  </div>
+  
+  <div id="Projects" class="tabcontent">
+        <div class = "inner">
+        <div class="senior">
+            <img src = "seniorweb.png">
+        </div>
+        <div class = "text">
+            <h2>Senior Squad Project</h2>
+            <div class = "box">
+            <p> I worked on this project with one other person. We created a website that is accesable for 
+            Seniors. We did through creating a large pictures and large hitboxes to click on for activities 
+            geared twords seniors. We also added a text to speech feature as well for the activities. There 
+            where many difficuluties with this project as we only had a 48 hour timespan to complete it for 
+            a competition. We quickly learned html and css basics to quickly put together a website.
+            </div>
+            <a href="https://fierdcs.github.io/">Click here to see website</a>
+            <a href ="https://github.com/FierdCS/FierdCS.github.io">Click here to see github</a>
+        </div>
+        </div>
+
+
+        <div class = "res">
+        <div class="restaurant">
+            <img src = "rest.png">
+        </div>
+        <div class = "text">
+            <h2>Restaurmania</h2>
+            <div class = "box">
+            I worked on this project with two people. We created a simple restaurant game where
+            you can independent control 3 character. These characters can go onto food stations to cook a
+            requested dish. This project taught me the fundamentals of game design such as having an way to 
+            calculate the time in game effectively, and setting objectives and tasks. other than game design 
+            fundamentals I also refreshed my experiences on java with object oriented programming with 
+            creating a player class to store each players position and a unique  avatar for each character. 
+            I also learned some basic java graphical interfaces such as Graphics 2D and jframe.
+            </div>
+            <a href ="https://github.com/KenBarrett/cschack">Click here to see github</a>
+        </div>
+        </div>
+
+       <div class = "fishes">
+        <div class="fish">
+            <img src = "fishweb.png">
+        </div>
+        <div class = "text">
+            <h2>Fish Calulator</h2>
+            <div class = "box">
+              I worked on this project by myself. I created a website that  
+              allows for the user to choose a combination of fish and a tanksize.  
+              The website then calculates any issues with the combination of 
+              fish that the user chooses or incompatibility with the size of the tank. 
+              This project gave me a good understanding of sql, as I created a database
+              to store all of my fishes attributes. This also makes it easy to add fish later  
+              if needed. I also improved my javascript through having to do compalitiblity 
+              calculations of the fish that where selected.
+            </div>
+            <a href="https://kenbarrett.github.io/fishsite/#">Click here to see website</a>
+            <a href ="https://github.com/KenBarrett/fishsite">Click here to see github</a>
+        </div>
+       </div> 
+    </div>
+  
+  <div id="Resume" class="tabcontent">
+    <h3>Resume</h3>
+    <iframe src="Resume.pdf" frameborder="0"></iframe>
+  </div>
+
+  <div id="Contact Me" class="tabcontent">
+    <h3>Contact Me</h3>
+    <p>Phone: 248-704-1473</p>
+    <p>Email: <a href="mailto:ktb25@pitt.edu">ktb25@pitt.edu 
+  </div>
+
+</html>
+
+
+
+
+
