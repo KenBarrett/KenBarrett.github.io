@@ -21,11 +21,19 @@
     justify-content: right;
 }
 
+.notes{
+    display: flex;
+    flex-direction: center;
+    justify-content: right;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: right;
 }
+
+
 /* personal image */
 img {
     max-width: 80%;
