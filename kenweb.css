@@ -1,8 +1,20 @@
 #myPDF
 {
-    width: 85%;
-    height: 975px;
+    width: 75%;
+    height: 1140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.underline{
+    text-decoration: underline;
+}
+
+.centertext{
+    text-align: center;
+}
+
 .inner{
     display: flex;
     flex-direction: center;
@@ -28,9 +40,31 @@
 }
 
 .container {
+    margin: 20px;
+    height: 50%;
+    width: 80%;
+    background-color: #CFD8D7;
     display: flex;
     align-items: center;
     justify-content: right;
+    padding: 30px;
+    box-shadow: 10px 10px 5px #CAB1BD;
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  .container {
+    margin: 20px;
+    height: 50%;
+    width: 80%;
+    background-color: #CFD8D7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    padding: 30px;
+    box-shadow: 10px 10px 5px #CAB1BD;
+  }
 }
 
 
@@ -39,12 +73,8 @@ img {
     max-width: 80%;
     max-height: 80%;
     float: left;
-    border: 8px solid grey;
-}
-
-.box {
-  inline-size : 800px;
-  overflow-wrap: break-word;
+    border: 8px solid #CAB1BD;
+    clear: both;
 }
 
 .text {
@@ -57,7 +87,7 @@ body {font-family: Arial;}
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 1px solid #CAB1BD;
   background-color: #f1f1f1;
 }
 
@@ -66,7 +96,7 @@ body {font-family: Arial;}
   background-color: inherit;
   float: left;
 
-  border: 1px solid black;
+  border: 1px solid #CFD8D7;
   border-radius: 10px;
   outline: none;
   cursor: pointer;
@@ -77,25 +107,24 @@ body {font-family: Arial;}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #E7CFCD;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #9F9AA4;
 }
 
-/* Style the tab content */
-/*
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-*/
 .tabcontent { 
     display: none;
 }
-.tabcontent.active { display: block; }
-.tablinks.active { cursor: not-allowed; }
+.tabcontent.active { 
+    display: block; 
+}
+.tablinks.active{ 
+    cursor: not-allowed; 
+}
+
+.background{
+  background-color: #B5C9C3;
+}

@@ -5,11 +5,9 @@
   <title>Ken Website</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="kenweb.css">
-  <script src="myscripts.js"></script>
+  <script src="script.js"></script>
 </head>
 
-<body>
-</body>
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'About')">About</button>
   <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
@@ -17,73 +15,56 @@
   <button class="tablinks" onclick="openTab(event, 'Contact Me')">Contact Me</button>
 </div>
 
+<body class="background">
+
 <div id="About" class="tabcontent active">
-
-
   <div class="container">
     <div class="image">
       <img src="kenpic.jpg">
     </div>
     <div class="text">
-      <h2>About me!</h2>
-      <p>I am currently a Junior attending the University of Pittsburgh. I am
-        majoring in computer science and planning to earn a minor in mathematics.I have many
+      <h2 class = "underline">About me!</h2>
+      <p>I am currently a Senior attending the University of Pittsburgh. I am
+        majoring in computer science and planning to earn a minor in mathematics. I have many
         interests in the field of computing including cybersecurity, cryptography,
         game design and website design. My hobbies include playing guitar, hockey, soccer, and
         cooking. My favorite color is teal and a fun fact about me is that I can speak Japanese
         fluently. </p>
     </div>
   </div>
-
-
 </div>
 
 <div id="Projects" class="tabcontent">
-  <div class="inner">
-    <div class="senior">
-      <img src="seniorweb.png">
+
+  <div class="container">
+    <div class="note">
+      <img src="notenest.png">
     </div>
     <div class="text">
-      <h2>Senior Squad Project</h2>
-      <div class="box">
-          I worked on this project with one other person. We created a website that is accessible for
-          Seniors. We did this by creating large pictures and large hitboxes to click on for activities
-          geared toward seniors. We also added a text-to-speech feature as well for the activities. There
-          were many difficulties with this project as we only had a 48-hour timespan to complete it for
-          a competition. We quickly learned HTML and CSS basics to quickly put together a website.
-      </div>
-      <a href="https://fierdcs.github.io/">Click here to see website</a>
-      <a href="https://github.com/FierdCS/FierdCS.github.io">Click here to see github</a>
+      <h2 class = "underline">NoteNest</h2>
+      <p>
+        I worked on this project in a team of four people. We worked to create
+        a website to convert audio from a guitar to guitar tabliture. There where 
+        many difficulties that we had to deal with in the creation of this project. 
+        It was very difficult to figure out how to apply fast-fourier 
+        tranformations on a website application to be able to decipher the audio
+        information. Furthermore, how a guitar is setup made this a difficult task, as there
+        are up to four different ways to play the same note. To overcome this we had to
+        calcultate the most efficient possible note on the guitar from the previous note that
+        was played.
+      </p>
+      <a href="https://fierdcs.github.io/SteelHacks-MusicProject.github.io/#">Click here to see website</a>
+      <a href="https://github.com/FierdCS/SteelHacks-MusicProject.github.io">Click here to see github</a>
     </div>
   </div>
 
-
-  <div class="res">
-    <div class="restaurant">
-      <img src="rest.png">
-    </div>
-    <div class="text">
-      <h2>Restaurmania</h2>
-      <div class="box">
-        I worked on this project with two people. We created a simple restaurant game where
-        you can independently control 3 characters. These characters can go to food stations to cook a
-        requested dish. This project taught me the fundamentals of game design such as having a way to
-        calculate the time in the game effectively and setting objectives and tasks. Other than game design
-        fundamentals I also refreshed my experiences on Java with object-oriented programming by
-        creating a player class to store each player's position and a unique avatar for each character.
-        I also learned some basic Java graphical interfaces such as Graphics 2D and Jframe.
-      </div>
-      <a href="https://github.com/KenBarrett/cschack">Click here to see github</a>
-    </div>
-  </div>
-
-  <div class="fishes">
+  <div class="container">
     <div class="fish">
       <img src="fishweb.png">
     </div>
     <div class="text">
-      <h2>Fish Calulator</h2>
-      <div class="box">
+      <h2 class = "underline">Fish Calulator</h2>
+      <p>
         I worked on this project by myself. I created a website that
         allows the user to choose a combination of fish and a tank size.
         The website then calculates any issues with the combination of
@@ -92,45 +73,62 @@
         to store all of my fish attributes. This also makes it easy to add fish later
         if needed. I also improved my JavaScript by having to do compatibility
         calculations of the fish that were selected.
-      </div>
+      </p>
       <a href="https://kenbarrett.github.io/fishsite/#">Click here to see website</a>
       <a href="https://github.com/KenBarrett/fishsite">Click here to see github</a>
     </div>
   </div>
 
-  <div class="notes">
-    <div class="note">
-      <img src="notenest.png">
+  <div class="container">
+    <div class="restaurant">
+      <img src="rest.png">
     </div>
     <div class="text">
-      <h2>NoteNest</h2>
-      <div class="box">
-        I worked on this project in a team of four people. we worked to create
-        a website that is able to take in audio from a guitar and then transpose it
-        to guitar tabliture. There where many difficulties that we had to deal with in
-        the creation of this project. It was very difficult to figure out how to apply fast-fourier 
-        tranformations on a website application to be able to decipher the audio
-        information. Furthermore, how a guitar is setup made this a difficult task, as there
-        are up to four different ways to play the same note. To overcome this we had to
-        calcultate the most efficient possible note on the guitar from the previous note that
-        was played.
-      </div>
-      <a href="https://fierdcs.github.io/SteelHacks-MusicProject.github.io/#">Click here to see website</a>
-      <a href="https://github.com/FierdCS/SteelHacks-MusicProject.github.io">Click here to see github</a>
+      <h2 class = "underline">Restaurmania</h2>
+      <p>
+        I worked on this project with two people. We created a simple restaurant game where
+        you can independently control 3 characters. These characters can go to food stations to cook a
+        requested dish. This project taught me the fundamentals of game design such as having a way to
+        calculate the time in the game effectively and setting objectives and tasks. Other than game design
+        fundamentals I also refreshed my experiences on Java with object-oriented programming by
+        creating a player class to store each player's position and a unique avatar for each character.
+        I also learned some basic Java graphical interfaces such as Graphics 2D and Jframe.
+      </p>
+      <a href="https://github.com/KenBarrett/cschack">Click here to see github</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="senior">
+      <img src="seniorweb.png">
+    </div>
+    <div class="text">
+      <h2 class = "underline">Senior Squad Project</h2>
+      <p>
+          I worked on this project with one other person. We created a website that is accessible for
+          Seniors. We did this by creating large pictures and large hitboxes to click on for activities
+          geared toward seniors. We also added a text-to-speech feature as well for the activities. There
+          were many difficulties with this project as we only had a 48-hour timespan to complete it for
+          a competition. We quickly learned HTML and CSS basics to quickly put together a website.
+      </p>
+      <a href="https://fierdcs.github.io/">Click here to see website</a>
+      <a href="https://github.com/FierdCS/FierdCS.github.io">Click here to see github</a>
     </div>
   </div>
 
 </div>
 
 <div id="Resume" class="tabcontent">
-  <h3>Resume</h3>
-  <iframe id="myPDF" src="Resume.pdf" frameborder="0"></iframe>
+    <h1 class = "underline centertext">Resume</h1>
+    <iframe id="myPDF" src="Resume.pdf" frameborder="0"></iframe>
 </div>
 
 <div id="Contact Me" class="tabcontent">
-  <h3>Contact Me</h3>
-  <p>Phone: 248-704-1473</p>
-  <p>Email: <a href="mailto:ktb25@pitt.edu">ktb25@pitt.edu
+    <h1 class = "underline">Contact Me:</h3>
+    <h2>Phone: 248-704-1473</h2>
+    <h2>Email: <a href="mailto:ktb25@pitt.edu">ktb25@pitt.edu</a></h2>
 </div>
+
+</body>
 
 </html>
